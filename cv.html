@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyen's CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('https://plus.unsplash.com/premium_photo-1683309565422-77818a287060?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: rgba(51, 51, 51, 0.9);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .nav-menu a:hover {
+            color: #ddd;
+        }
+
+        .cv-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            display: flex;
+            gap: 2rem;
+        }
+
+        .cv-photo img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #333;
+        }
+
+        .cv-content {
+            flex: 1;
+        }
+
+        .cv-content h1 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .cv-content h2 {
+            font-size: 1.5rem;
+            color: #555;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .cv-content p, .cv-content ul {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .cv-content ul {
+            margin-left: 1.5rem;
+        }
+
+        .footer {
+            background-color: rgba(51, 51, 51, 0.9);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container, .cv-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav-menu {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .cv-photo img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="NgTrKhNguyenBlog.html" class="logo">Nguyễn Trương Khôi Nguyên</a>
+            <div class="nav-menu">
+                <a href="NgTrKhNguyenBlog.html">Trang Chủ</a>
+                <a href="cv.html">Hồ Sơ CV</a>
+                <a href="about.html">Về Tôi</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="cv-container">
+        <div class="cv-photo">
+            <img src="/AnhDaiDien.jpg" alt="Ảnh đại diện">
+        </div>
+        <div class="cv-content">
+            <h1>Nguyễn Trương Khôi Nguyên</h1>
+            <p><strong>Full Stack Developer</strong></p>
+            <p><strong>Email:</strong> ngtr******@gmail.com | <strong>Phone:</strong> (+84) *******200</p>
+            <p><strong>Ngày sinh:</strong> 23 May 2000</p>
+
+            <h2>Học vấn</h2>
+            <p>Cử nhân Công Nghệ Thông Tin - Chuyên ngành Công Nghệ Phần Mềm<br>
+               [Đại Học Kinh Tế Tài Chính (UEF)] (2018 - 2022)</p>
+
+            <h2>Kinh nghiệm làm việc</h2>
+            <p><strong>Full Stack Developer</strong> - [KTV] (6/3/2023 - Hiện tại)<br>
+               Phát triển và duy trì các ứng dụng web, làm việc với cả front-end và back-end.</p>
+            <h2>Kỹ năng</h2>
+            <ul>
+                <li>Ngôn ngữ lập trình: Java, Javascript, React Native, HTML & CSS</li>
+                <li>Cơ sở dữ liệu: MySQL, SQL Server, DB2, Oracle</li>
+                <li>Công cụ: Git, VS Code, Docker</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Nguyễn Trương Khôi Nguyên</p>
+    </footer>
+</body>
+</html>

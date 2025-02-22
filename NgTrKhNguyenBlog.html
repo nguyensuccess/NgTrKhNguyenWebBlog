@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ng.Tr.Kh.Nguyen's Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('https://plus.unsplash.com/premium_photo-1683309565422-77818a287060?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: rgba(51, 51, 51, 0.9);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .nav-menu a:hover {
+            color: #ddd;
+        }
+
+        .header {
+            background-color: rgba(244, 244, 244, 0.9);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .blog-post {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .blog-post h2 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .blog-post p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .footer {
+            background-color: rgba(51, 51, 51, 0.9);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-menu {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="NgTrKhNguyenBlog.html" class="logo">Nguyễn Trương Khôi Nguyên</a>
+            <div class="nav-menu">
+                <a href="NgTrKhNguyenBlog.html">Trang Chủ</a>
+                <a href="cv.html">Hồ Sơ CV</a>
+                <a href="about.html">Về Tôi</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>Nguyễn Trương Khôi Nguyên Blog</h1>
+        <p>Nơi tôi chia sẻ về <b>Công Việc</b> và <b>Cuộc Sống</b></p>
+    </header>
+
+    <main class="container">
+        <article class="blog-post">
+            <h2>Lời giới thiệu</h2>
+            <p>
+                Tôi là <b>Nguyễn Trương Khôi Nguyên</b>, một lập trình viên đam mê công nghệ. 
+                Website này được tôi viết bằng <b>HTML</b> và <b>CSS</b>. Tôi thích khám phá <b>các công nghệ mới</b>, đặc biệt là trong lĩnh vực <b>phát triển web</b> và <b>ứng dụng di động</b>.
+            </p>
+        </article>
+        <article class="blog-post">
+            <h2>Ngôn Ngữ Lập Trình & Hệ Quản Trị Cơ Sở Dữ Liệu</h2>
+            <p>Tôi đã từng học và đi thực tập về các ngôn ngữ <b>Java</b>, <b>Javascript</b>, <b>React Native</b>, <b>HTML & CSS</b>.</p>
+            <p>Thành thạo sử dụng và đi thực tập về các hệ quản trị cơ sở dữ liệu <b>MySQL</b>, 
+                <b>SQL Server</b>, <b>DB2</b> & <b>Oracle</b>.</p>
+        </article>
+        <article class="blog-post">
+            <h2>Github</h2>
+            <p>Đây là GitHub của tôi, nơi tôi chia sẻ các dự án cá nhân và mã nguồn mở. 
+                Bạn có thể xem chi tiết tại đây 
+                <a href="https://github.com/nguyensuccess" target="_blank">My Github</a>.</p>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Nguyễn Trương Khôi Nguyên</p>
+    </footer>
+</body>
+</html>

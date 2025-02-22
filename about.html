@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyen's Blog - About</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('https://plus.unsplash.com/premium_photo-1683309565422-77818a287060?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: rgba(51, 51, 51, 0.9);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .nav-menu a:hover {
+            color: #ddd;
+        }
+
+        .about-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            display: flex;
+            gap: 2rem;
+        }
+
+        .about-photo img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #333;
+        }
+
+        .about-content {
+            flex: 1;
+        }
+
+        .about-content h1 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .about-content p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .about-content a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .about-content a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            background-color: rgba(51, 51, 51, 0.9);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container, .about-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav-menu {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .about-photo img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="NgTrKhNguyenBlog.html" class="logo">Nguyễn Trương Khôi Nguyên</a>
+            <div class="nav-menu">
+                <a href="NgTrKhNguyenBlog.html">Trang Chủ</a>
+                <a href="cv.html">Hồ Sơ CV</a>
+                <a href="about.html">Về Tôi</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="about-container">
+        <div class="about-photo">
+            <img src="/AnhDaiDien.jpg" alt="Ảnh đại diện">
+        </div>
+        <div class="about-content">
+            <h1>Về tôi</h1>
+            Tôi học ngành <b>Công Nghệ Thông Tin</b> và chuyên ngành <b>Công Nghệ Phần Mềm</b> (từ năm 2018 đến 2022). 
+            Hiện tại tôi đang làm về <b>Website (<u>Full Stack Developer</u>).</b>
+
+        <div>    </br>
+            <h2>Liên hệ với tôi</h2>
+            <p><strong>Telegram:</strong> <a href="https://t.me/nguyensuccess" target="_blank">Nguyen</a></p>
+            <!-- <p><strong>Zalo:</strong> <a href="https://zalo.me/0888235200" target="_blank">0******200</a></p> -->
+            <p><strong>Facebook:</strong> <a href="https://facebook.com/nguyenntsuccess" target="_blank">Nguyễn Trương Khôi Nguyên</a></p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Nguyễn Trương Khôi Nguyên</p>
+    </footer>
+</body>
+</html>
